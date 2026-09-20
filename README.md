@@ -23,7 +23,7 @@ The current install package is in `BUILD/`. Build notes and issue notes are in `
 Implemented and packaged:
 
 - Native Main_MiSTer lightgun detection patch for X-GUNNER P1-P4 USB IDs.
-- A current patched Main_MiSTer binary for testers: `Main_MiSTer/binaries/MiSTer-xgunner-lightgun-only-20260907`.
+- A current patched Main_MiSTer binary for testers: `Main_MiSTer/binaries/MiSTer-xgunner-lightgun-only-20260920`.
 - A current patched RetroAchievements Main_MiSTer binary for testers: `Main_MiSTer/binaries/MiSTer_RA-xgunner-lightgun-only-20260907`.
 - PSX GunCon and Justifier input maps.
 - Normal PSX GunCon and Justifier config profiles.
@@ -89,16 +89,16 @@ The debounce matters because the gun can report tracking and button transitions 
 Use this binary for the latest packaged native test:
 
 ```sh
-Main_MiSTer/binaries/MiSTer-xgunner-lightgun-only-20260907
+Main_MiSTer/binaries/MiSTer-xgunner-lightgun-only-20260920
 ```
 
 SHA-256:
 
 ```sh
-f403514eabd6fd647f6f9cb7904e769b9f82511f9e9003398532aaf06ad14f31
+87a19270e08abafa40c477e782afbd08abd369d6ca47fa5cde8af8e9eadc6a10
 ```
 
-The same current binaries are also copied into `BUILD/`, which is the folder testers should use when installing the package.
+The same current binary is also copied into `BUILD/`, which is the folder testers should use when installing the package.
 
 RetroAchievements Main_MiSTer test binary:
 

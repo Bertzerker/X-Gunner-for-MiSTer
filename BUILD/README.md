@@ -9,7 +9,7 @@ Back up your existing MiSTer files before replacing anything.
 Copy this file to the MiSTer root as `/media/fat/MiSTer`:
 
 ```text
-MiSTer-xgunner-lightgun-only-20260907
+MiSTer-xgunner-lightgun-only-20260920
 ```
 
 You can also keep the filename and point an alternate MiSTer setup at it manually, but replacing `/media/fat/MiSTer` is the normal test path.

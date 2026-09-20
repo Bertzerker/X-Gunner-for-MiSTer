@@ -3,7 +3,7 @@
 Most testers can use the prebuilt binary in this repository:
 
 ```sh
-Main_MiSTer/binaries/MiSTer-xgunner-lightgun-only-20260907
+Main_MiSTer/binaries/MiSTer-xgunner-lightgun-only-20260920
 ```
 
 Build from source if you want to review the patch, test against a newer Main_MiSTer revision, or make changes.
@@ -40,7 +40,7 @@ Python helper notes:
 The included patch was prepared against this Main_MiSTer commit:
 
 ```sh
-915ca3395aa5a26322007974faa757299a56b856
+5b3ae64440f94c7a73c9e7fc4cc3a42e4af156d3
 ```
 
 It may still apply to newer Main_MiSTer revisions, but if upstream `input.cpp` or `menu.cpp` changes around the lightgun code, the patch may need a small manual refresh.
@@ -57,7 +57,7 @@ cd Main_MiSTer
 Check out the tested base revision:
 
 ```sh
-git checkout 915ca3395aa5a26322007974faa757299a56b856
+git checkout 5b3ae64440f94c7a73c9e7fc4cc3a42e4af156d3
 ```
 
 Apply the X-GUNNER patch from this repository:
@@ -78,6 +78,8 @@ Build:
 make clean
 make
 ```
+
+The `20260920` binary was built in Docker using Main_MiSTer's `.devcontainer/Dockerfile` because this Windows host did not have native `make`, WSL access, or the Arm toolchain available.
 
 The built binary will be:
 

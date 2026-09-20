@@ -1,5 +1,5 @@
 diff --git a/input.cpp b/input.cpp
-index 50f1991..f2657ae 100644
+index 1d53ca8..e97c6e1 100644
 --- a/input.cpp
 +++ b/input.cpp
 @@ -1922,6 +1922,23 @@ static void input_lightgun_load(int idx)
@@ -26,7 +26,7 @@ index 50f1991..f2657ae 100644
  int input_has_lightgun()
  {
  	for (int i = 0; i < NUMDEV; i++)
-@@ -4217,6 +4234,8 @@ void mergedevs()
+@@ -4218,6 +4235,8 @@ void mergedevs()
  				memcpy(input[i].name, input[j].name, sizeof(input[i].name));
  				memcpy(input[i].idstr, input[j].idstr, sizeof(input[i].idstr));
  
@@ -35,7 +35,7 @@ index 50f1991..f2657ae 100644
  				if (!input[i].quirk)
  				{
  					//All mice as spinners
-@@ -5436,6 +5455,9 @@ int input_test(int getchar)
+@@ -5437,6 +5456,9 @@ int input_test(int getchar)
  							input_lightgun_load(n);
  						}
  
@@ -45,7 +45,7 @@ index 50f1991..f2657ae 100644
  						//Sinden Lightgun (two different PIDs, four different PIDs depending on gun color/config)
  						if ((input[n].vid == 0x16c0 || input[n].vid == 0x16d0) && (
              					input[n].pid == 0x0f01 ||
-@@ -5993,7 +6015,7 @@ int input_test(int getchar)
+@@ -5994,7 +6016,7 @@ int input_test(int getchar)
  									}
  								}
  
@@ -55,10 +55,10 @@ index 50f1991..f2657ae 100644
  									menu_lightgun_cb(i, ev.type, ev.code, ev.value);
  
 diff --git a/menu.cpp b/menu.cpp
-index a659031..cca0560 100644
+index 9577174..e4271f1 100644
 --- a/menu.cpp
 +++ b/menu.cpp
-@@ -1014,6 +1014,7 @@ static int gun_ok = 0;
+@@ -1018,6 +1018,7 @@ static int gun_ok = 0;
  static int gun_side = 0;
  static int gun_idx = 0;
  static int32_t gun_pos[4] = {};
@@ -66,7 +66,7 @@ index a659031..cca0560 100644
  static int page = 0;
  
  static void menu_button_name(int button, char *buf, size_t bsize)
-@@ -7313,6 +7314,7 @@ void HandleUI(void)
+@@ -7501,6 +7502,7 @@ void HandleUI(void)
  		gun_side = 0;
  		gun_y = 0;
  		gun_x = 0;
@@ -74,7 +74,7 @@ index a659031..cca0560 100644
  		memset(gun_pos, 0, sizeof(gun_pos));
  		menustate = MENU_LGCAL1;
  		menusub = 0;
-@@ -7345,6 +7347,7 @@ void HandleUI(void)
+@@ -7533,6 +7535,7 @@ void HandleUI(void)
  		{
  			gun_ok = 0;
  			gun_side++;
@@ -82,7 +82,7 @@ index a659031..cca0560 100644
  		}
  
  		if (gun_ok == 2)
-@@ -8394,6 +8397,8 @@ int menu_lightgun_cb(int idx, uint16_t type, uint16_t code, int value)
+@@ -8582,6 +8585,8 @@ int menu_lightgun_cb(int idx, uint16_t type, uint16_t code, int value)
  	{
  		if ((code == 0x130 || code == 0x131 || code == 0x120 || code == 0x110) && menustate == MENU_LGCAL1)
  		{
