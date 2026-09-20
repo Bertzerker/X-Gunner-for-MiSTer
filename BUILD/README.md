@@ -19,14 +19,14 @@ You can also keep the filename and point an alternate MiSTer setup at it manuall
 Copy this file to the MiSTer root:
 
 ```text
-MiSTer_RA-xgunner-lightgun-only-20260907
+MiSTer_RA-xgunner-lightgun-only-20260920
 ```
 
 To use it for RetroAchievements launches, set this in `MiSTer.ini`:
 
 ```ini
 [RA_*]
-main=MiSTer_RA-xgunner-lightgun-only-20260907
+main=MiSTer_RA-xgunner-lightgun-only-20260920
 ```
 
 ## Config, Maps, And Script

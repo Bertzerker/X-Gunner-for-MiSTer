@@ -24,7 +24,7 @@ Implemented and packaged:
 
 - Native Main_MiSTer lightgun detection patch for X-GUNNER P1-P4 USB IDs.
 - A current patched Main_MiSTer binary for testers: `Main_MiSTer/binaries/MiSTer-xgunner-lightgun-only-20260920`.
-- A current patched RetroAchievements Main_MiSTer binary for testers: `Main_MiSTer/binaries/MiSTer_RA-xgunner-lightgun-only-20260907`.
+- A current patched RetroAchievements Main_MiSTer binary for testers: `Main_MiSTer/binaries/MiSTer_RA-xgunner-lightgun-only-20260920`.
 - PSX GunCon and Justifier input maps.
 - Normal PSX GunCon and Justifier config profiles.
 - PSX 2X CPU GunCon and Justifier input maps for both `PSX_2XCPU` and `PSX2XCPU` launch names.
@@ -103,14 +103,16 @@ The same current binary is also copied into `BUILD/`, which is the folder tester
 RetroAchievements Main_MiSTer test binary:
 
 ```sh
-Main_MiSTer/binaries/MiSTer_RA-xgunner-lightgun-only-20260907
+Main_MiSTer/binaries/MiSTer_RA-xgunner-lightgun-only-20260920
 ```
 
 SHA-256:
 
 ```sh
-096aebbc13fb2b8d27468bc3395f7a93b23280de1c9d53e34246ebf02063be84
+6c905850ea7dfea4fce15ac3baf67493439027a9f32c9da02a79c1032064d986
 ```
+
+This RetroAchievements binary is built from `odelot/Main_MiSTer` tag `v1.12.2` with the X-GUNNER patch applied.
 
 ## Tested And Mapped Cores
 

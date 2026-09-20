@@ -81,6 +81,8 @@ make
 
 The `20260920` binary was built in Docker using Main_MiSTer's `.devcontainer/Dockerfile` because this Windows host did not have native `make`, WSL access, or the Arm toolchain available.
 
+The `MiSTer_RA-xgunner-lightgun-only-20260920` binary was built from `odelot/Main_MiSTer` tag `v1.12.2` with the same X-GUNNER patch applied.
+
 The built binary will be:
 
 ```sh
