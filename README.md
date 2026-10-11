@@ -1,6 +1,6 @@
 # X-GUNNER on MiSTer FPGA
 
-<img src="DOCS/assets/x-gunner-illustration.png" alt="X-GUNNER toy lightgun illustration" width="420">
+<img src="DOCS/assets/x-gunner-branding.jpg" alt="X-GUNNER branding image" width="420">
 
 ## Why This Patch Exists
 
