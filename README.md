@@ -1,5 +1,7 @@
 # X-GUNNER on MiSTer FPGA
 
+![X-GUNNER toy lightgun illustration](DOCS/assets/x-gunner-illustration.png)
+
 ## Why This Patch Exists
 
 The X-GUNNER receiver appears to MiSTer as a composite USB device. The tested P1 receiver exposes separate keyboard, mouse, and joystick-style input interfaces. The aiming data is reported through the mouse interface as absolute coordinates, while several physical buttons are reported as keyboard or mouse-button events.
