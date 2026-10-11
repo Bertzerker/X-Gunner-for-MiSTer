@@ -1,6 +1,8 @@
 # X-GUNNER on MiSTer FPGA
 
+<p align="center">
 <img src="DOCS/assets/x-gunner-branding.jpg" alt="X-GUNNER branding image" width="420">
+</p>
 
 ## Why This Patch Exists
 
